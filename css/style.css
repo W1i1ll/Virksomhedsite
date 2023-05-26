@@ -7,9 +7,10 @@ html {
 }
 
 header * {
-  font-size: 20px;
+  font-size: 15px;
   margin: 0;
   padding: 0;
+  background-color: white;
 }
 
 header ul {
@@ -22,15 +23,15 @@ header ul {
 
 header li {
   display: block;
-  padding: 3px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
+  padding: 35px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 50;
+  font-size: 5px;
   color: #707070;
   border-style: none;
   margin: auto;
 }
- a:link {
+a:link {
   text-decoration: none;
 }
 
@@ -40,9 +41,11 @@ a:visited {
 
 a:active {
   text-decoration: none;
-} 
+}
 
-a, a:visited, a:active {
+a,
+a:visited,
+a:active {
   color: inherit;
 }
 
@@ -52,4 +55,12 @@ a:hover {
 }
 
 @media (min-width: 1000px) {
+}
+
+body {
+  background-color: #e3e3e3;
+}
+
+footer {
+  background-color: #606060;
 }
