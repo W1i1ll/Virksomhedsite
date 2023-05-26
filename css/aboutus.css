@@ -1,0 +1,201 @@
+.grid {
+    padding: 2em;
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid: auto / repeat(auto-fit, minmax(190px, 1fr));
+    gap: 1em 2em;
+  }
+  
+  header {
+    align-self: center;
+    text-align: start;
+  }
+  
+  .icon {
+    width: 16vmin;
+    opacity: 0.5;
+  }
+  
+  svg {
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 7vmin;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  
+  .grid > section:first-child {
+    display: grid;
+    align-content: start;
+  }
+  
+  /*section > figure:nth-of-type(1),
+  section > article:nth-of-type(1) {
+    order: 1;
+  }
+  
+  section > figure:nth-of-type(2),
+  section > article:nth-of-type(2) {
+    order: 2;
+  }
+  
+  section > figure:nth-of-type(3),
+  section > article:nth-of-type(3) {
+    order: 3;
+  }
+  
+  section > figure:nth-of-type(4),
+  section > article:nth-of-type(4) {
+    order: 4;
+  }
+  
+  section > figure:nth-of-type(5),
+  section > article:nth-of-type(5) {
+    order: 5;
+  }
+  
+  section > figure:nth-of-type(6),
+  section > article:nth-of-type(6) {
+    order: 6;
+  }*/
+  
+  section > figure,
+  section > article {
+    order: var(--i);
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  figure {
+    position: relative;
+    align-self: center;
+  }
+  
+  figure,
+  article {
+    margin-bottom: 2em;
+  }
+  
+  p {
+    margin-bottom: 1em;
+  }
+  
+  a {
+    text-align: center;
+    display: block;
+    margin-top: 1em;
+  }
+  
+  @supports selector(::marker) {
+    section {
+      counter-reset: desc;
+    }
+    article,
+    figure {
+      counter-increment: desc;
+    }
+    h3 + p::before,
+    figure::before {
+      content: counter(desc);
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      display: inline flex;
+      justify-content: center;
+      align-items: center;
+      background: #1e3c8e;
+      color: #fff;
+      font-size: 70%;
+      vertical-align: 10%;
+      margin-right: 0.2rem;
+    }
+    figure::before {
+      position: absolute;
+      top: 0;
+      left: .5rem;
+      transform: translateY(-80%);
+      font-size: 80%;
+      width: 18px;
+      height: 18px;
+    }
+  }
+  
+  @media (min-width: 701px) {
+    header {
+      text-align: center;
+      grid-row: 2 / span 2;
+    }
+    .icon {
+      margin: 0 auto;
+    }
+    .grid > section:first-child {
+      grid-column: span 2;
+      grid: auto / subgrid;
+    }
+  
+    .grid > section:last-child {
+      grid-column: -2;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .grid {
+      grid: revert;
+    }
+    header {
+      grid-column: span 2;
+      display: grid;
+      grid: auto / auto 1fr;
+      gap: 0 25px;
+    }
+    header > .icon {
+      align-self: center;
+      grid-area: 1 / 1 / span 2 / auto;
+    }
+    .grid > section[aria-label] {
+      display: contents;
+    }
+    figure::before {
+      content: none;
+    }
+    section > figure:nth-of-type(even) {
+      grid-column: 2;
+    }
+    section > article:nth-of-type(even) {
+      grid-row: calc(var(--i) + 1);
+    }
+    /*section > article:nth-of-type(2) {
+      grid-row: 3;
+    }
+    section > article:nth-of-type(4) {
+      grid-row: 5;
+    }
+    section > article:nth-of-type(6) {
+      grid-row: 7;
+    }*/
+  }
+  
+  @media (max-width: 500px) {
+    .grid {
+      display: flex;
+      flex-direction: column;
+    }
+    article {
+      counter-increment: desc;
+    }
+    figure {
+      counter-reset: desc;
+      margin-bottom: 0;
+    }
+    header {
+      display: block;
+      grid-area: initial;
+    }
+  }
+  
