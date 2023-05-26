@@ -63,4 +63,13 @@ body {
 
 footer {
   background-color: #606060;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
+
+footer p {
+  margin: 0;
+}
+
+
