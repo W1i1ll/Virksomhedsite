@@ -13,19 +13,29 @@ header * {
   background-color: white;
 }
 
+.header img {
+  float: left;
+  width: 250px;
+  height: 60px;
+  background: #555;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
 header ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 1em;
+  gap: 0.5em;
 }
 
 header li {
   display: block;
   padding: 35px;
   font-family: Helvetica, sans-serif;
-  font-weight: 50;
+  font-weight: 300;
   font-size: 5px;
   color: #707070;
   border-style: none;
@@ -72,4 +82,9 @@ footer p {
   margin: 0;
 }
 
+.grid_1-1-1 {
+  display: grid;
+  gap: 1em;
 
+  grid-template-columns: 1fr 1fr 1fr;
+}
