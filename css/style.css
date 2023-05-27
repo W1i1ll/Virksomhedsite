@@ -1,7 +1,7 @@
 html {
-  --primary: #e3e3e3;
+  --primary: #ddd;
   --secondary: #606060;
-  --tertiary: #e39b79;
+  --tertiary: #eb9e7b;
 
   --space-sm: 1rem;
 }
@@ -68,18 +68,45 @@ a:hover {
 }
 
 body {
-  background-color: #e3e3e3;
+  background-color: #ddd;
 }
 
 footer {
   background-color: #606060;
-  color: #fff;
+
   padding: 20px;
   text-align: center;
 }
 
 footer p {
   margin: 0;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 375;
+}
+
+footer h1 {
+  font-size: 30px;
+  font-weight: 375px;
+  margin: 0;
+  color: white;
+  font-family: Helvetica, sans-serif;
+}
+footer h2 {
+  margin: 0;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+}
+footer h3 {
+  margin: 0;
+  color: white;
+  font-family: Helvetica, sans-serif;
+}
+
+footer img {
+  width: 100px;
 }
 
 .grid_1-1-1 {
@@ -87,4 +114,16 @@ footer p {
   gap: 1em;
 
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
