@@ -46,6 +46,7 @@ h3 {
   top: 50%;
   transform: translateY(-50%);
 }
+
 .container {
   max-width: 992px;
   margin-right: auto;

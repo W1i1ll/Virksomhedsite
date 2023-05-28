@@ -43,3 +43,4 @@ $.addEventListener('DOMContentLoaded', function() {
   window.addEventListener("resize", sliderMe)
 
 });
+
