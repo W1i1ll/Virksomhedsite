@@ -46,3 +46,208 @@ h3 {
   top: 50%;
   transform: translateY(-50%);
 }
+.container {
+  max-width: 992px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+  right: 0%;
+  transition: right 0.5s;
+  padding: 10px 0px;
+}
+
+.slider-item {
+  flex-basis: 33.33%;
+  flex-shrink: 0;
+  display: block;
+}
+@media (max-width: 768px) {
+  .slider-item {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 567px) {
+  .slider-item {
+    flex-basis: 100%;
+  }
+}
+
+.box1 {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: url(img/uniont1.webp);
+  background-size: cover;
+
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.box2 {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: url(img/uniont2.webp);
+  background-size: cover;
+
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.box3 {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: url(img/uniont3.jpeg);
+  background-size: cover;
+
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.box4 {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: url(img/uniont4.jpeg);
+  background-size: cover;
+
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.box5 {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: url(img/uniont5.jpeg);
+  background-size: cover;
+
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.box6 {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: url(img/uniont6.jpeg);
+  background-size: cover;
+
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.box7 {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: url(img/uniont7.png);
+  background-size: cover;
+
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.box8 {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: url(img/uniont8.png);
+  background-size: cover;
+
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.box9 {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: url(img/uniont9.jpeg);
+  background-size: cover;
+
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.control {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  left: 5px;
+  right: 5px;
+  top: 50%;
+}
+#next,
+#prev {
+  outline: none;
+  background-color: transparent;
+  font-size: 30px;
+  border: 0px;
+}
+button:hover {
+  cursor: pointer;
+}
+#next span,
+#prev span {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 2px 10px 3px 10px;
+  border-radius: 100px;
+  color: white;
+}
+#next span {
+  padding-left: 12px;
+  padding-bottom: 5px;
+}
+#prev span {
+  padding-right: 12px;
+  padding-bottom: 5px;
+}
