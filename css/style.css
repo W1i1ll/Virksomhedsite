@@ -64,9 +64,6 @@ a:hover {
   transition: 0.5s;
 }
 
-@media (min-width: 1000px) {
-}
-
 body {
   background-color: #ddd;
 }
@@ -130,4 +127,9 @@ footer img {
   content: "";
   display: table;
   clear: both;
+}
+
+@media (max-width: 1000px) {
+}
+@media (min-width: 400px) {
 }
