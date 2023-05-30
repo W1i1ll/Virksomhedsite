@@ -26,6 +26,16 @@ h1 {
   color: #ffffff;
   padding-bottom: 15px;
   margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+h2 {
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 15px;
+  margin-bottom: 2rem;
   margin-top: 4rem;
 }
 
@@ -131,7 +141,7 @@ h3 {
   align-items: center;
   justify-content: center;
   color: white;
-  background-image: url(img/uniont3.jpeg);
+  background-image: url(img/uniont3.webp);
   background-size: cover;
 
   margin-right: 10px;
@@ -146,7 +156,7 @@ h3 {
   align-items: center;
   justify-content: center;
   color: white;
-  background-image: url(img/uniont4.jpeg);
+  background-image: url(img/uniont4\ copy.webp);
   background-size: cover;
 
   margin-right: 10px;
@@ -161,7 +171,7 @@ h3 {
   align-items: center;
   justify-content: center;
   color: white;
-  background-image: url(img/uniont5.jpeg);
+  background-image: url(img/uniont5.copy.webp);
   background-size: cover;
 
   margin-right: 10px;
@@ -176,7 +186,7 @@ h3 {
   align-items: center;
   justify-content: center;
   color: white;
-  background-image: url(img/uniont6.jpeg);
+  background-image: url(img/uniont6.copy.webp);
   background-size: cover;
 
   margin-right: 10px;
@@ -191,7 +201,7 @@ h3 {
   align-items: center;
   justify-content: center;
   color: white;
-  background-image: url(img/uniont7.png);
+  background-image: url(img/uniont7.webp);
   background-size: cover;
 
   margin-right: 10px;
@@ -206,7 +216,7 @@ h3 {
   align-items: center;
   justify-content: center;
   color: white;
-  background-image: url(img/uniont8.png);
+  background-image: url(img/uniont8.webp);
   background-size: cover;
 
   margin-right: 10px;
@@ -221,7 +231,7 @@ h3 {
   align-items: center;
   justify-content: center;
   color: white;
-  background-image: url(img/uniont9.jpeg);
+  background-image: url(img/uniont9.webp);
   background-size: cover;
 
   margin-right: 10px;
