@@ -6,25 +6,9 @@ function addIndex(item, index) {
 }
 
 /*
-articles.forEach( (article, index) => {
-  article.style.setProperty('--i', index + 1);
-  figures[index].style.setProperty('--i', index + 1);
-})
-*/
-/*
-for( let index=0; index < articles.length && index < figures.length; index++ ) {
-  articles[index].style.setProperty('--i', index + 1);
-  figures[index].style.setProperty('--i', index + 1);
-}*/
+Denne kode vælger alle <article> og <figure> elementer i dokumentet og anvender en funktion kaldet addIndex på hvert af dem.
 
+Funktionen addIndex tager to parametre: item repræsenterer hvert enkelt valgt element, og index repræsenterer indekset eller positionen for elementet i udvælgelsen.
 
-/*
-const addCustomProperties = items => {
-  for (const [index, item] of items.entries()) {
-    item.style.setProperty('--i', index + 1);
-  }
-}
-
-addCustomProperties(articles);
-addCustomProperties(figures);
+Inde i addIndex funktionen sætter linjen item.style.setProperty('--i', index + 1) en brugerdefineret CSS-variabel kaldet --i til værdien af index + 1. Dette kan bruges til at tilpasse stylingen eller layoutet af elementerne baseret på deres position i udvælgelsen.
 */
