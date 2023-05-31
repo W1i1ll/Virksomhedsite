@@ -85,13 +85,16 @@ footer p {
 }
 
 footer h1 {
-  font-size: 35px;
+  font-size: 7vmin;
   font-weight: 375px;
   margin: 0;
   color: white;
   font-family: Helvetica, sans-serif;
   margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  line-height: 1;
 }
+
 footer h2 {
   margin: 0;
   color: white;
